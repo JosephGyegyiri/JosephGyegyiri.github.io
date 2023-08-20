@@ -21,6 +21,7 @@ https://github.com/pozh/Initio/issues
 
 Credits
 -------
+* Tim St. Onge  [GitHub repo](https://github.com/TimStOnge/TimStOnge.github.io)
 * Design and development: **Sergey Pozhilov** - http://pozhilov.com
 * More free templates by Sergey: http://gettemplate.com
 
