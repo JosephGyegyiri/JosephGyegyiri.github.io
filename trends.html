@@ -64,7 +64,28 @@
 		</div>
 	</div>
 </main>
+<script>
+    // Set the target date for when the website will launch
+    const targetDate = new Date("2023-10-15T00:00:00").getTime();
 
+    // Update the countdown every second
+    const countdownInterval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+      if (distance < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("countdown").innerHTML = "Website is live!";
+      }
+    }, 1000);
+  </script>
 <footer id="underfooter">
 	<div class="container">
 		<div class="row">
@@ -86,29 +107,6 @@
 	</div>
 </footer>
 
-<script>
-	 <script>
-    // Set the target date for when the website will launch
-    const targetDate = new Date("2023-10-15T00:00:00").getTime();
-
-    // Update the countdown every second
-    const countdownInterval = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-      if (distance < 0) {
-        clearInterval(countdownInterval);
-        document.getElementById("countdown").innerHTML = "Website is live!";
-      }
-    }, 1000);
-</script>
 
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
