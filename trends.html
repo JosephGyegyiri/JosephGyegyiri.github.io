@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="shortcut icon" href="assets/images/gt_favicon.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Under Construction</title>
@@ -39,41 +38,13 @@
 <body>
   <div class="container">
     <h1>Webpage Under Construction</h1>
-    <p>We are working hard to bring you an amazing website.</p>
+    <p>Stay tuned for trending news and tools from the geospatial, land surveying, and tech world.</p>
     <div class="countdown" id="countdown"></div>
   </div>
 
   <script>
     // Set the target date for when the website will launch
     const targetDate = new Date("2023-12-31T00:00:00").getTime();
-
-    // Update the countdown every second
-    const countdownInterval = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-      if (distance < 0) {
-        clearInterval(countdownInterval);
-        document.getElementById("countdown").innerHTML = "Website is live!";
-      }
-    }, 1000);
-  </script>
-</body>
-</html>
-.</p>
-    <div class="countdown" id="countdown"></div>
-  </div>
-
-  <script>
-    // Set the target date for when the website will launch
-    const targetDate = new Date("2023-10-15T00:00:00").getTime();
 
     // Update the countdown every second
     const countdownInterval = setInterval(() => {
