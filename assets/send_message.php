@@ -6,7 +6,7 @@
 
 	$message_body = "Name: ".$name.", Email: ".$email.", Message: ".$message;
 
-	mail('touhidur002@gmail.com', 'Portfolio message', $message_body);
+	mail('jgyegyiri2023@fau.edu.com', 'Portfolio message', $message_body);
 
 	
  ?>
